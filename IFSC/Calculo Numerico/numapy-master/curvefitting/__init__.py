@@ -1,0 +1,2 @@
+from curvefitting.simplelinear import SimpleLinearFitting
+from curvefitting.multiplelinear import MultipleLinearFitting

@@ -1,0 +1,37 @@
+{% extends "head.html" %} 
+{% load static %}
+
+{% block title %}Mobilidade{% endblock %}
+{% block body %}
+  <div class="parallax-mobility">
+   
+    <div class="scroll-indicator fa fa-chevron-down"></div>
+  </div>
+  
+  <div class='container'>
+    <div class="row">
+      <div class="col time-line">
+        <br />
+        <h2 data-anime="left">Mobilidade Urbana</h2><br/>
+        <img data-anime="left" src="{% static 'img/body/mobility.png' %}"  class="rounded float-left">
+        
+      
+        {# <a href="https://br.freepik.com/fotos-vetores-gratis/fundo">Fundo vetor criado por freepik - br.freepik.com</a> #}
+        <br /><br />
+      </div>
+      <div class="col">
+        <br /><br /><br /><br /><br /><br /><br />
+
+        <p class="time-line-text">
+          <a class="item-time-line">Plano de Mobilidade Urbana;</a><br/><br/>
+          <a class="item-time-line">Relatórios de Impacto de Circulação;</a><br/><br/>
+          <a class="item-time-line">Estudos de Tráfego e Circulação Viária;</a><br/><br/>
+          <a class="item-time-line">Simulações de Tráfego;</a><br/><br/>
+        </p>
+      </div>
+    </div>
+  </div>
+  <br /><br /><br />
+  {% include "footer.html" %} 
+  <script rel="stylesheet" src="{% static 'js/details.js' %}" ></script>
+{% endblock %}

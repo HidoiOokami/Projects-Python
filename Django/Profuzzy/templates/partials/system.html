@@ -1,0 +1,52 @@
+{% extends "head.html" %} 
+{% load static %}
+
+{% block title %}Sistemas{% endblock %}
+{% block body %}
+
+  <div class="parallax-system">
+    <div class="scroll-indicator fa fa-chevron-down"></div>
+  </div>
+  <div class='container'>
+
+    <div class="row">
+      <div class="col time-line">
+        <br/><br/>
+        <h2 data-anime="left">Sistemas, Estudos e Projetos</h2><br/><br/>
+
+        <h4>Sistemas</h4><br/>
+        <p class="time-line-text">
+          <a class="item-time-line">Sistemas de Gestão;</a><br/><br/>
+          <a class="item-time-line">Sistemas da Qualidade;</a><br/><br/>
+          <a class="item-time-line">Sistemas de Desempenho e Controle da Qualidade;</a><br/><br/>
+          <a class="item-time-line">Sistemas de Atendimento ao Passageiro;</a><br/><br/>
+          <a class="item-time-line">Sistemas de Bilhetagem Eletrônica;</a><br/><br/>
+          <a class="item-time-line">Sistemas de Acompanhamento e Controle Operacional;</a><br/><br/>
+          <a class="item-time-line">Sistemas de Monitoramento e Vigilância de Frota;</a><br/><br/>
+          <a class="item-time-line">Sistemas de Informação Embarcada;</a><br/><br/>
+          <a class="item-time-line">Sistemas Especialista e Aplicações em Lógica Fuzzy;</a><br/><br/>
+          <a class="item-time-line">Escala Inteligente.</a><br/><br/>
+        </p>
+
+        <h4 class="item-time-line">Estudos e Projetos</h4><br/>
+        <p class="time-line-text">
+          <a class="item-time-line">Estudo de Viabilidade;</a><br/><br/>
+          <a class="item-time-line">Plano de Negócios;</a><br/><br/>
+          <a class="item-time-line">Auditoria;</a><br/><br/>
+          <a class="item-time-line"></a>Avaliação de Empresa;<br/><br/>
+          <a class="item-time-line"></a>Transporte e Logística;<br/><br/>
+          <a class="item-time-line"></a>Tráfego e Urbanismo.<br/><br/>
+        </p>
+      </div><br/><br/>
+      <div class="col">
+        <img data-anime="right" src="{% static 'img/body/system.jpg' %}" class="img-fluid card-img">
+        <br /><br />
+       
+      </div>
+    </div>
+
+  </div>
+  <br /><br /><br />
+  {% include "footer.html" %} 
+  <script rel="stylesheet" src="{% static 'js/details.js' %}" ></script>
+{% endblock %}

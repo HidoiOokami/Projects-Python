@@ -1,0 +1,53 @@
+{% extends "head.html" %} 
+{% load static %}
+
+{% block title %}Cálculo Tarifário{% endblock %}
+
+{% block body %}
+  <div class="parallax-calculation">
+    
+    <div class="scroll-indicator fa fa-chevron-down"></div>
+  </div>
+  <br/>
+  <div class='container'>
+    <div class="row">
+      <div class="col time-line">
+        <h2 data-anime="left">Cálculo Tarifário</h2><br/>
+
+        <p class="time-line-text">
+          
+            A PROFUZZY acumulou em sua trajetória empresarial, um amplo acervo relacionado com 
+            cálculo tarifário, regulamentação institucional de custos e tarifas, no desenvolvimento de 
+            metodologias aplicadas na elaboração de fluxo de caixa, na avaliação do equilíbrio econômico 
+            e financeiro de contratos, na apuração de déficit tarifário e no estudo de viabilidade, 
+            experiencia esta que foi consolidada num catálogo de produtos:
+          <br/><br/>
+          
+        </p>
+        <p class="time-line-text">
+          <a class="item-time-line">Cálculo de Tarifa de  Remuneração;</a><br/><br/>
+          <a class="item-time-line">Cálculo de Tarifa Pública;</a><br/><br/>
+          <a class="item-time-line">Custos Operacionais;</a><br/><br/>
+          <a class="item-time-line">Fluxo de Caixa;</a><br/><br/>
+          <a class="item-time-line">Avaliação do Equilíbrio Econômico Financeiro de Contrato;</a><br/><br/>
+          <a class="item-time-line">Apuração de Diferenças Tarifárias;</a><br/><br/>
+          <a class="item-time-line">Estudos de Viabilidade.</a><br/><br/>
+        </p>
+
+      
+      </div><br/><br/>
+
+      <div class="col">
+        <img data-anime="right" src="{% static 'img/body/calculation.jpg' %}" class="img-fluid card-img">
+        {# <a href="https://br.freepik.com/fotos-vetores-gratis/negocio">Negócio vetor criado por rawpixel.com - br.freepik.com</a> #}
+        <br /><br />
+       
+        
+      </div>
+    </div>
+    
+  </div>
+  <br /><br /><br />
+  {% include "footer.html" %} 
+  <script rel="stylesheet" src="{% static 'js/details.js' %}" ></script>
+{% endblock %}

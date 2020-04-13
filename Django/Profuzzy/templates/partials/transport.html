@@ -1,0 +1,75 @@
+{% extends "head.html" %} 
+{% load static %}
+{% block title %}Transporte{% endblock %}
+{% block body %}
+
+  <div class="parallax-transport">
+    <div class="scroll-indicator fa fa-chevron-down"></div>
+  </div>
+
+  <br/>
+  <div class='container'>
+    <div class="row">
+      <div class="col time-line">
+        <h2 data-anime="left">Transporte Público</h2><br/><br/>
+
+        <h4>Planejamento da Operação</h4><br/>
+        <p class="time-line-text">
+          <a class="item-time-line">Diagnóstico do Sistema Existente;</a><br/><br/>
+          <a class="item-time-line">Elaboração do Plano Operacional;</a><br/><br/>
+          <a class="item-time-line">Dimensionamento Operacional;</a><br/><br/>
+          <a class="item-time-line">Programação da Operação;</a><br/><br/>
+          <a class="item-time-line">Operacionalização dos Serviços;</a><br/><br/>
+          <a class="item-time-line">Controle da Qualidade e do Desempenho;</a><br/><br/>
+          <a class="item-time-line">Roteirização;</a><br/><br/>
+          <a class="item-time-line">Logística;</a><br/><br/>
+          <a class="item-time-line">Remuneração, Custos e Tarifas.</a><br/><br/>
+        </p>
+
+        <h4 class="item-time-line">Estudo de Viabilidade Econômico-Financeira</h4><br/>
+        <p class="time-line-text">
+          <a class="item-time-line">Estudo de Viabilidade Econômico-Financeira;</a><br/><br/>
+          <a class="item-time-line">Custos e Tarifas;</a><br/><br/>
+          <a class="item-time-line">Plano de Negócios;</a><br/><br/>
+          <a class="item-time-line">Avaliação de Empresa;</a><br/><br/>
+        </p>
+
+        <h4 class="item-time-line">Fretamento Escolar ou de Fábrica</h4><br/>
+        <p class="time-line-text">
+          <a class="item-time-line">Plano de Negócio;</a><br/><br/>
+          <a class="item-time-line">Planejamento Operacional;</a><br/><br/>
+          <a class="item-time-line">Custos e Tarifas;</a><br/><br/>
+          <a class="item-time-line">Roteirização</a><br/><br/>
+          <a class="item-time-line">Logística</a><br/><br/>
+        </p>
+      </div><br/><br/>
+      <div class="col">
+        <img data-anime="right" src="{% static 'img/body/people.jpg' %}" class="img-fluid card-img">
+        <br /><br />
+        <h4 class="item-time-line">Pesquisas Operacionais</h4><br/>
+        <p class="time-line-text">
+          <a class="item-time-line">Origem/Destino - Embarcada;</a><br/><br/>
+          <a class="item-time-line">Origem/Destino - Domiciliar;</a><br/><br/>
+          <a class="item-time-line">Sobe/Desce -  Embarcada;</a><br/><br/>
+        </p>
+        <br />
+        <h4 class="item-time-line">Tecnologia da Informação - ITS</h4><br/>
+        <p class="time-line-text">
+          <a class="item-time-line">Sistema de Bilhetagem Eletrônica;</a><br/><br/>
+          <a class="item-time-line">Sistema de Vigilância de Frota e Terminais;</a><br/><br/>
+          <a class="item-time-line">Sistema de Monitoramento e Controle Operacional;</a><br/><br/>
+          <a class="item-time-line">Sistema de Acompanhamento e Gestão Operacional;</a><br/><br/>
+          <a class="item-time-line">Sistema de Informação Embarcada.</a><br/><br/> 
+        </p>
+        <h4 class="item-time-line">Transporte Público Individual</h4><br/>
+        <p class="time-line-text">
+          <a class="item-time-line">Taxi.</a><br/><br/> 
+        </p>
+      </div>
+    </div>
+  </div> 
+  <br /><br /><br />
+  {% include "footer.html" %} 
+  <script rel="stylesheet" src="{% static 'js/details.js' %}" ></script>
+{% endblock %}
+

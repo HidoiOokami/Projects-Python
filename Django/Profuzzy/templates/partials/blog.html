@@ -1,0 +1,57 @@
+{% extends "head.html" %} 
+{% load static %}
+
+{% block title %}Blog{% endblock %}
+
+{% block body %}
+
+  {# navbar #}
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <p class="my-2 my-sm-0 w3-text-white">Bem Vindo <b>{{post.author}} </b></p>
+          
+      </form>
+  </div>
+</nav>
+  
+  <div class="container">
+    <ul class="boxes">
+      <li class="box-list">
+        <div class="box-text">
+          <h2>Profuzzy</h2>
+          <p>Saiba um pouco da história da <i>Profuzzy</i>.</p>
+          <a class="blog-card-post" href="/" data-anime="left">Leia sobre</a>
+        </div>
+      </li>
+
+      {% for post in posts %}
+      <li class="box-list btn-home">
+        <div class="box-text">
+          <h4>{{ post.title }}</h4><br />
+          <p>Autor: {{ post.author}}</p>
+          <p>Data da Postagem: {{post.created_at|date:"d M Y"}}</p>
+          <a href="/blog/post/{{post.pk}}" class="blog-card-post" target="_blank">Leia sobre</a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <br /><br /><br />
+  {% include "footer.html" %} 
+  <script rel="stylesheet" src="{% static 'js/details.js' %}" ></script>
+{% endblock %}

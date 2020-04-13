@@ -1,0 +1,3 @@
+from integration.trapeze import Trapeze
+from integration.simpsontwo import SecondSimpsonIntegration
+from integration.simpson import SimpsonIntegration

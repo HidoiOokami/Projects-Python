@@ -1,0 +1,37 @@
+{% extends "head.html" %} 
+{% load static %}
+
+{% block title %}Acidentes{% endblock %}
+
+{% block body %}
+
+<div class="parallax-accidents">
+  <div class="scroll-indicator fa fa-chevron-down"></div>
+</div>
+
+<div class='container'>
+  <div class="row">
+    <div class="col time-line">
+      <br/><br/>
+      <h2 data-anime="left">Acidentes de Trânsito</h2>
+      <img data-anime="right" src="{% static 'img/body/accidents.jpg' %}" class="img-fluid card-img">  
+    </div>
+    <div class="col">
+      <br/><br/><br/><br/>
+      <p class="time-line-text">
+        <a class="item-time-line">Análise da Dinâmica de Acidentes de Trânsito;</a><br/><br/>
+        <a class="item-time-line">Reconstrução e prevenção;</a><br/><br/>
+        <a class="item-time-line">Estudos e  Simulações.</a><br/><br/>
+      </p>  
+    </div>
+  </div>
+</div>
+<script rel="stylesheet" src="{% static 'js/details.js' %}" ></script>
+
+<br /><br /><br />
+{% include "footer.html" %} 
+
+{% endblock %}
+
+
+  
